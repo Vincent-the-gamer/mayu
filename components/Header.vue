@@ -72,6 +72,9 @@ span.home {
     color: white;
     background-color: black;
     border: 1px solid white;
+    &:hover {
+        background-color: deeppink;
+    }
 }
 
 @media screen and (max-width: 400px) {
