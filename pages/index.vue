@@ -5,7 +5,7 @@
         <div p-1 mb-3 text-center>
             <p>Vincent's multi-function tool.</p>
             <b>
-                <i>A web 「Swiss knife」.</i>
+                <i>A web 「Swiss knife」. {{ kaomoji }}</i>
             </b>
         </div>
 
@@ -14,5 +14,12 @@
 </template>
 
 <script setup lang="ts">
+const kaomoji = ref<string>("")
 
+onMounted(async () => {
+    const { kaomoji: moji } = await $fetch("/api/", {
+        method: "GET"
+    })
+    kaomoji.value = moji
+})
 </script>
