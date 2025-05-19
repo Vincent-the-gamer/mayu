@@ -1,44 +1,48 @@
 * {
-  font-family: "LXGW Wenkai";
+  font-family: 'LXGW Wenkai';
 }
 
-html, input, select {
-    background-color: white;
-    color: black;
+html,
+input,
+select {
+  background-color: white;
+  color: black;
 }
 
-html.dark-mode, .dark-mode input, .dark-mode select {
-    background-color: black;
-    color: white;
+html.dark-mode,
+.dark-mode input,
+.dark-mode select {
+  background-color: black;
+  color: white;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .dark-mode a {
-    color: white;
+  color: white;
 }
 
 /* fonts */
 @font-face {
-    font-family: "LXGW Wenkai";
-    src: url("/fonts/LXGWWenKaiMono-Light.ttf");
-    font-style: normal;
-    font-weight: 200;
+  font-family: 'LXGW Wenkai';
+  src: url('/fonts/LXGWWenKaiMono-Light.ttf');
+  font-style: normal;
+  font-weight: 200;
 }
 @font-face {
-    font-family: "LXGW Wenkai";
-    src: url("/fonts/LXGWWenKaiMono-Medium.ttf");
-    font-style: normal;
-    font-weight: 300;
+  font-family: 'LXGW Wenkai';
+  src: url('/fonts/LXGWWenKaiMono-Medium.ttf');
+  font-style: normal;
+  font-weight: 300;
 }
 @font-face {
-    font-family: "LXGW Wenkai";
-    src: url("/fonts/LXGWWenKaiMono-Regular.ttf");
-    font-style: normal;
-    font-weight: 400;
+  font-family: 'LXGW Wenkai';
+  src: url('/fonts/LXGWWenKaiMono-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* View Transition API */

@@ -1,6 +1,6 @@
-import { defineConfig } from "taze"
+import { defineConfig } from 'taze'
 
 export default defineConfig({
-    write: true,
-    install: true
+  write: true,
+  install: true,
 })

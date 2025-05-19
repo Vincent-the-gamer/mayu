@@ -39,7 +39,7 @@ export const identities = [
 ]
 
 // 特殊地点
-export const specialLocations: Record<string, string[]> = { 
+export const specialLocations: Record<string, string[]> = {
   中国: ['天庭', '黄风岭', '花果山', '高老庄', '盘丝洞', '火焰山'],
   美国: ['圣地亚哥'],
   日本: ['穗织村', '鹫逗市', '京都市', '学园都市', '新日暮里'],

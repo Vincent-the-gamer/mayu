@@ -1,35 +1,34 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Mayu",
-      viewport: "width=device-width, initial-scale=1, maximum-scale=1",
-      charset: "utf-8",
+      title: 'Mayu',
+      viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+      charset: 'utf-8',
     },
   },
   imports: {
     dirs: [
-      "~/types/**"
-    ]
+      '~/types/**',
+    ],
   },
   css: [
-    '~/assets/css/main.scss'
+    '~/assets/css/main.scss',
   ],
   modules: [
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
   ],
   pinia: {
     storesDirs: ['./store/**'],
   },
   compatibilityDate: '2024-11-16',
-  logLevel: "info",
+  logLevel: 'info',
   devServer: {
-    port: 8080
+    port: 8080,
   },
-  devtools: { 
-    enabled: true
+  devtools: {
+    enabled: true,
   },
   // Cross Origin
   routeRules: {
