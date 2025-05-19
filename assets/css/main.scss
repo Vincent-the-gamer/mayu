@@ -1,6 +1,5 @@
 * {
   font-family: "LXGW Wenkai";
-  font-weight: 400;
 }
 
 html, input, select {
@@ -25,19 +24,19 @@ a {
 /* fonts */
 @font-face {
     font-family: "LXGW Wenkai";
-    src: url("/fonts/LXGWWenKaiMonoGB-Light.ttf");
+    src: url("/fonts/LXGWWenKaiMono-Light.ttf");
     font-style: normal;
     font-weight: 200;
 }
 @font-face {
     font-family: "LXGW Wenkai";
-    src: url("/fonts/LXGWWenKaiMonoGB-Medium.ttf");
+    src: url("/fonts/LXGWWenKaiMono-Medium.ttf");
     font-style: normal;
     font-weight: 300;
 }
 @font-face {
     font-family: "LXGW Wenkai";
-    src: url("/fonts/LXGWWenKaiMonoGB-Regular.ttf");
+    src: url("/fonts/LXGWWenKaiMono-Regular.ttf");
     font-style: normal;
     font-weight: 400;
 }
