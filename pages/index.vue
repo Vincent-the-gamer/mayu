@@ -1,13 +1,11 @@
 <script setup lang="ts">
 const menuStore = useMenuStore()
 const kaomoji = ref<string>('')
-
-onMounted(async () => {
-  const { kaomoji: moji } = await $fetch('/api/', {
-    method: 'GET',
-  })
-  kaomoji.value = moji
+const { data } = await useFetch('/api/', {
+  method: "GET",
 })
+kaomoji.value = data.value?.kaomoji!
+
 </script>
 
 <template>
