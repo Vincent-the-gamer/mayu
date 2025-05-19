@@ -9,7 +9,7 @@
             </b>
         </div>
 
-        <button btn p-3>Get Started</button>
+        <button btn p-3 @click="$router.push('/http')">Get Started</button>
     </div>
 </template>
 

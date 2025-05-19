@@ -1,5 +1,5 @@
 <template>
-    <div mt-20>
+    <div>
         HTTP Request
     </div>
 </template>

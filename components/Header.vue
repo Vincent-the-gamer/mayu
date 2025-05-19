@@ -12,12 +12,14 @@
                 <span class="gh-logo" i-carbon-logo-github />
             </a>
             <ColorMode class="logo" />
-            <span class="menu" i-carbon-menu relative top--1 />
+            <span class="menu" :class="menuStore.show ? 'i-carbon-close-large' : 'i-carbon-menu'"
+                  @click="menuStore.show = !menuStore.show"/>
         </div>
     </header>
 </template>
 
 <script lang="ts" setup>
+const menuStore = useMenuStore()
 
 </script>
 
@@ -85,6 +87,8 @@ span.home {
 
 .menu {
     cursor: pointer;
+    position: relative;
+    top: -0.25rem;
     &:hover {
         color: deeppink;
     }

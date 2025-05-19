@@ -12,8 +12,12 @@ export default defineNuxtConfig({
   ],
   modules: [
     '@unocss/nuxt',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@pinia/nuxt'
   ],
+  pinia: {
+    storesDirs: ['./store/**'],
+  },
   compatibilityDate: '2024-11-16',
   logLevel: "info",
   devServer: {

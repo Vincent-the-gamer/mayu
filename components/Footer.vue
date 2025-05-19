@@ -7,3 +7,13 @@
 <script setup lang="ts">
 import { version } from "../package.json"
 </script>
+
+<style lang="scss" scoped>
+footer {
+    background-color: white;
+}
+
+.dark-mode footer {
+    background-color: black;
+}
+</style>
