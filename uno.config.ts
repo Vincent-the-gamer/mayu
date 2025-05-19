@@ -39,5 +39,11 @@ export default defineConfig({
             "btn": `bg-gray-800 border-2px border-solid border-white color-white p-2
             border-rd-2.5 hover:bg-pink` 
         },
+        {
+            "input": `border-2px border-solid border-pink border-rd-2 font-size-4`
+        },
+        {
+            "select": `border-2px border-solid border-pink border-rd-2 h-8 w-25 font-size-4`
+        }
     ]
 })

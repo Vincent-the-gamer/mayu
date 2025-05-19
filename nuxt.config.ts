@@ -7,6 +7,11 @@ export default defineNuxtConfig({
       charset: "utf-8",
     },
   },
+  imports: {
+    dirs: [
+      "~/types/**"
+    ]
+  },
   css: [
     '~/assets/css/main.scss'
   ],

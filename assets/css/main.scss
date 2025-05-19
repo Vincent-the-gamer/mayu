@@ -1,9 +1,14 @@
-html {
+* {
+  font-family: "LXGW Wenkai";
+  font-weight: 400;
+}
+
+html, input, select {
     background-color: white;
     color: black;
 }
 
-html.dark-mode {
+html.dark-mode, .dark-mode input, .dark-mode select {
     background-color: black;
     color: white;
 }
@@ -13,8 +18,28 @@ a {
     color: black;
 }
 
-a.dark-mode {
+.dark-mode a {
     color: white;
+}
+
+/* fonts */
+@font-face {
+    font-family: "LXGW Wenkai";
+    src: url("/fonts/LXGWWenKaiMonoGB-Light.ttf");
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: "LXGW Wenkai";
+    src: url("/fonts/LXGWWenKaiMonoGB-Medium.ttf");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "LXGW Wenkai";
+    src: url("/fonts/LXGWWenKaiMonoGB-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
 }
 
 /* View Transition API */

@@ -9,11 +9,12 @@
             </b>
         </div>
 
-        <button btn p-3 @click="$router.push('/http')">Get Started</button>
+        <button btn p-3 @click="menuStore.show = true">Open Tools Menu</button>
     </div>
 </template>
 
 <script setup lang="ts">
+const menuStore = useMenuStore()
 const kaomoji = ref<string>("")
 
 onMounted(async () => {
