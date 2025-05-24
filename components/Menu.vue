@@ -17,11 +17,17 @@ const options: MenuOptions[] = [
     icon: 'i-carbon-partnership',
     description: '重开小游戏',
   },
-   {
+  {
     name: 'HTTP Cat',
     route: '/httpcat',
     icon: 'i-carbon-favorite',
     description: 'HTTP cat pictures.',
+  },
+  {
+    name: 'Video Downloader',
+    route: '/video-downloader',
+    icon: 'i-carbon-video',
+    description: 'Parse video link then download.',
   },
 ]
 

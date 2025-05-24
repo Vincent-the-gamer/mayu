@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.11.0",
+    "fast-dirpy": "^0.1.8",
     "fs-extra": "^11.3.0",
     "nuxt": "^3.17.4",
     "nuxt-shiki": "^0.3.0",
