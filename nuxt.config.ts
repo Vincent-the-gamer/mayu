@@ -3,6 +3,9 @@ export default defineNuxtConfig({
     prerender: {
       autoSubfolderIndex: false,
     },
+    externals: {
+        inline: ['puppeteer-core']
+    }
   },
   runtimeConfig: {
     /**
