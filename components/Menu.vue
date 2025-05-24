@@ -11,6 +11,12 @@ const options: MenuOptions[] = [
     icon: 'i-carbon-code',
     description: 'Send HTTP requests.',
   },
+  {
+    name: "Remake",
+    route: "/remake",
+    icon: "i-carbon-partnership",
+    description: "重开小游戏"
+  }
 ]
 
 function toRoute(route: string) {
