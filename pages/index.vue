@@ -2,10 +2,9 @@
 const menuStore = useMenuStore()
 const kaomoji = ref<string>('')
 const { data } = await useFetch('/api/', {
-  method: "GET",
+  method: 'GET',
 })
 kaomoji.value = data.value?.kaomoji!
-
 </script>
 
 <template>

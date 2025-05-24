@@ -8,8 +8,8 @@ const options: MenuOptions[] = [
   {
     name: 'HTTP Request',
     route: '/http',
-    icon: "i-carbon-code",
-    description: "Send HTTP requests."
+    icon: 'i-carbon-code',
+    description: 'Send HTTP requests.',
   },
 ]
 
@@ -62,7 +62,6 @@ function toRoute(route: string) {
     left: 0;
   }
 }
-
 
 .dark-mode .menu {
   background-color: black;

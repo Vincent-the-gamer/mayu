@@ -25,6 +25,25 @@ a {
   color: white;
 }
 
+/* View Transition API */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 9999;
+}
+.dark-mode::view-transition-old(root) {
+  z-index: 9999;
+}
+.dark-mode::view-transition-new(root) {
+  z-index: 1;
+}
+
 /* fonts */
 @font-face {
   font-family: 'LXGW Wenkai';
@@ -44,22 +63,21 @@ a {
   font-style: normal;
   font-weight: 400;
 }
-
-/* View Transition API */
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation: none;
-  mix-blend-mode: normal;
+@font-face {
+  font-family: 'Input Mono';
+  src: url('/fonts/InputMono-Regular.ttf');
+  font-style: normal;
+  font-weight: 300;
 }
-::view-transition-old(root) {
-  z-index: 1;
+@font-face {
+  font-family: 'Input Mono';
+  src: url('/fonts/InputMono-Bold.ttf');
+  font-style: normal;
+  font-weight: 400;
 }
-::view-transition-new(root) {
-  z-index: 9999;
-}
-.dark-mode::view-transition-old(root) {
-  z-index: 9999;
-}
-.dark-mode::view-transition-new(root) {
-  z-index: 1;
+@font-face {
+  font-family: 'Input Mono';
+  src: url('/fonts/InputMono-Italic.ttf');
+  font-style: italic;
+  font-weight: 300;
 }
