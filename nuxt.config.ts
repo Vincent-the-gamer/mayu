@@ -4,6 +4,14 @@ export default defineNuxtConfig({
       autoSubfolderIndex: false,
     },
   },
+  runtimeConfig: {
+    /**
+     * production: "prod"
+     * deploy on vercel: "cloudflare"
+     */
+    env: 'prod',
+    baseUrl: 'your_api_deploy_location',
+  },
   app: {
     head: {
       title: 'Mayu',

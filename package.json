@@ -9,18 +9,21 @@
     "url": "git+https://github.com/Vincent-the-gamer/swiss-knife.git"
   },
   "scripts": {
-    "build": "nuxt build",
+    "build": "pnpm run assets && nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "dep": "taze major",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "assets": "tsx server/utils/generateAssets.ts"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.11.0",
+    "fs-extra": "^11.3.0",
     "nuxt": "^3.17.4",
     "nuxt-shiki": "^0.3.0",
+    "tslog": "^4.9.3",
     "vue": "^3.5.14",
     "vue-router": "^4.5.1"
   },
@@ -33,6 +36,7 @@
     "eslint-plugin-format": "^1.0.1",
     "sass": "^1.89.0",
     "taze": "^19.1.0",
+    "tsx": "^4.19.4",
     "unocss": "^66.1.2"
   }
 }
