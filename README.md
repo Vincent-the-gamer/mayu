@@ -10,4 +10,7 @@
 
 # Play
 
-https://mayu.vince-g.xyz/
+> [!IMPORTANT]
+> This project is deployed as a cloudflare worker and working as both an API and webpage.
+
+https://mayu.erxianqiaottjt.workers.dev/
