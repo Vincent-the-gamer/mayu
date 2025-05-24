@@ -1,10 +1,20 @@
 <script setup lang="ts">
 const menuStore = useMenuStore()
-const kaomoji = ref<string>('')
-const { data } = await useFetch('/api/', {
-  method: 'GET',
+const kaomoji = ref<string>("")
+const localIp = ref<string>("")
+
+onMounted(async () => {
+  const { kaomoji: moji } = await $fetch('/api/', {
+    method: 'GET',
+  })
+  kaomoji.value = moji
+
+  const { ip } = await $fetch('/api/whoami', {
+    method: "GET"
+  })
+  localIp.value = ip
 })
-kaomoji.value = data.value?.kaomoji!
+
 </script>
 
 <template>
@@ -16,6 +26,7 @@ kaomoji.value = data.value?.kaomoji!
       <b>
         <i>A web 「Swiss knife」. {{ kaomoji }}</i>
       </b>
+      <p>Local IP: {{ localIp }}</p>
     </div>
 
     <button btn p-3 @click="menuStore.show = true">

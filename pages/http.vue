@@ -48,14 +48,14 @@ async function makeRequest() {
 
 <template>
   <div absolute top-0 w-full h-full>
-    <div class="flex-center" pb-7>
+    <div class="flex-center" pb-13>
       <h1 w-fit>
         HTTP Request
       </h1>
       <div class="flex-center">
         <div mb-2>
-          <span>URL: </span>
-          <input v-model="request.url" input w-90 h-7 type="text">
+          <p>URL: </p>
+          <input class="url" v-model="request.url" input type="text">
         </div>
         <div mb-2>
           <span>Method: </span>
@@ -67,15 +67,15 @@ async function makeRequest() {
         </div>
         <div mb-2>
           <p>Headers: </p>
-          <textarea v-model="headerStr" input w-100 h-30 font-size-3.5 class="input-mono" />
+          <textarea v-model="headerStr" input class="input-mono" />
         </div>
         <div mb-2>
           <p>Params: </p>
-          <textarea v-model="paramsStr" input w-100 h-30 font-size-3.5 class="input-mono" />
+          <textarea v-model="paramsStr" input class="input-mono" />
         </div>
         <div mb-2>
           <p>Body: </p>
-          <textarea v-model="bodyStr" input w-100 h-30 font-size-3.5 class="input-mono" />
+          <textarea v-model="bodyStr" input class="input-mono" />
         </div>
         <div mb-2>
           <p>Result: </p>
@@ -105,5 +105,17 @@ async function makeRequest() {
     font-family: 'Input Mono';
     font-weight: 100;
   }
+}
+
+textarea {
+  width: 80vw;
+  max-width: 500px;
+  height: 300px;
+}
+
+.url {
+  width: 80vw;
+  height: 40px;
+  max-width: 500px;
 }
 </style>

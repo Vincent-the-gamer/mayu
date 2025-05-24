@@ -19,7 +19,7 @@ async function remake() {
       </button>
       <div text-align-center>
         <p>你的身份：</p>
-        <p>{{ identity ?? "暂无" }}</p>
+        <p font-size-5 color-red>{{ identity ?? "暂无" }}</p>
       </div>
     </div>
   </div>

@@ -89,6 +89,7 @@ export default eventHandler((event) => {
   if (!strCodes.includes(statusCode)) {
     return {
       code: 500,
+      img: null,
       msg: 'Status code is invalid!',
     }
   }
@@ -98,5 +99,6 @@ export default eventHandler((event) => {
   return {
     code: 200,
     img: `${baseUrl}/httpcat/${statusCode}.jpg`,
+    msg: "success!"
   }
 })

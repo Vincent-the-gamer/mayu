@@ -4,14 +4,16 @@
 
 html,
 input,
-select {
+select,
+textarea {
   background-color: white;
   color: black;
 }
 
 html.dark-mode,
 .dark-mode input,
-.dark-mode select {
+.dark-mode select,
+.dark-mode textarea {
   background-color: black;
   color: white;
 }

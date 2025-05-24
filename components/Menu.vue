@@ -17,6 +17,12 @@ const options: MenuOptions[] = [
     icon: 'i-carbon-partnership',
     description: '重开小游戏',
   },
+   {
+    name: 'HTTP Cat',
+    route: '/httpcat',
+    icon: 'i-carbon-favorite',
+    description: 'HTTP cat pictures.',
+  },
 ]
 
 function toRoute(route: string) {
@@ -51,6 +57,10 @@ function toRoute(route: string) {
   overflow-y: scroll;
   box-shadow: 0 0 10px black;
   background-color: rgb(242, 242, 242);
+}
+
+.dark-mode .menu {
+  box-shadow: 0 0 10px white;
 }
 
 /* screen > 400px */

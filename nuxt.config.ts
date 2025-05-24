@@ -9,7 +9,7 @@ export default defineNuxtConfig({
      * production: "prod"
      * deploy on vercel: "cloudflare"
      */
-    env: 'prod',
+    env: 'cloudflare',
     baseUrl: 'your_api_deploy_location',
   },
   app: {
