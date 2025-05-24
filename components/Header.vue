@@ -1,5 +1,9 @@
 <script lang="ts" setup>
 const menuStore = useMenuStore()
+
+function href(url: string) {
+  window.open(url)
+}
 </script>
 
 <template>
@@ -12,14 +16,11 @@ const menuStore = useMenuStore()
       </NuxtLink>
     </div>
     <div absolute top-1 right-4 m-0 h-full font-size-30px flex="~ row items-center justify-center gap-3.5">
-      <a class="logo" href="https://github.com/Vincent-the-gamer/mayu" target="_blank">
-        <span class="gh-logo" i-carbon-logo-github />
-      </a>
+      <div class="gh-logo" i-carbon-logo-github 
+          @click="href('https://github.com/Vincent-the-gamer/mayu')" />
       <ColorMode class="logo" />
-      <span
-        class="menu" :class="menuStore.show ? 'i-carbon-close-large' : 'i-carbon-menu'"
-        @click="menuStore.show = !menuStore.show"
-      />
+      <span class="menu" :class="menuStore.show ? 'i-carbon-close-large' : 'i-carbon-menu'"
+        @click="menuStore.show = !menuStore.show" />
     </div>
   </header>
 </template>
@@ -50,13 +51,31 @@ header {
   }
 }
 
+.gh-logo {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: -3.5px;
+  transition: all, 200ms;
+  cursor: pointer;
+  background-color: black;
+
+  &:hover {
+    background-color: deeppink;
+  }
+}
+
+.dark-mode .gh-logo {
+  background-color: white;
+
+  &:hover {
+    background-color: deeppink;
+  }
+}
+
 .dark-mode header {
   background-color: rgb(24, 24, 24);
   color: white;
-
-  .gh-logo {
-    color: white;
-  }
 }
 
 span.home {
@@ -66,6 +85,7 @@ span.home {
   border: 1px solid black;
   border-radius: 0.5rem;
   cursor: pointer;
+
   &:hover {
     background-color: deeppink;
   }
@@ -75,6 +95,7 @@ span.home {
   color: white;
   background-color: black;
   border: 1px solid white;
+
   &:hover {
     background-color: deeppink;
   }
@@ -90,6 +111,7 @@ span.home {
   cursor: pointer;
   position: relative;
   top: -0.25rem;
+
   &:hover {
     color: deeppink;
   }

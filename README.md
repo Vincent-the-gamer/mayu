@@ -10,7 +10,7 @@
 
 # Description
 
-The name **Mayu** is from **Mayu Shikibe(式部茉優)**, one of the main character in [`Yuzusoft's`](https://www.yuzu-soft.com/) game: [**Riddle Joker**](https://www.yuzu-soft.com/products.html)
+The name **Mayu** is from [**Mayu Shikibe(式部茉優)**](https://zh.moegirl.org.cn/zh-hans/%E5%BC%8F%E9%83%A8%E8%8C%89%E4%BC%98), one of the main character in [`Yuzusoft's`](https://www.yuzu-soft.com/) game: [**Riddle Joker**](https://www.yuzu-soft.com/products.html)
 
 # Play
 
