@@ -12,7 +12,7 @@ const menuStore = useMenuStore()
       </NuxtLink>
     </div>
     <div absolute top-1 right-4 m-0 h-full font-size-30px flex="~ row items-center justify-center gap-3.5">
-      <a class="logo" href="https://github.com/Vincent-the-gamer" target="_blank">
+      <a class="logo" href="https://github.com/Vincent-the-gamer/mayu" target="_blank">
         <span class="gh-logo" i-carbon-logo-github />
       </a>
       <ColorMode class="logo" />
