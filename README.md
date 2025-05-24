@@ -7,3 +7,7 @@
 
 > [!NOTE]
 > Work in progress.
+
+# Play
+
+https://mayu.vince-g.xyz/
