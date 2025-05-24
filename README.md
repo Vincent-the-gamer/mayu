@@ -14,3 +14,5 @@
 > This project is deployed as a cloudflare worker and working as both an API and webpage.
 
 https://mayu.erxianqiaottjt.workers.dev/
+
+This project has inherited [Vincent-the-gamer/api](https://github.com/Vincent-the-gamer/api)
