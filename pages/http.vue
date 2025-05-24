@@ -18,18 +18,19 @@ const request = reactive<HTTPRequest>({
   method: 'GET',
   headers: {},
   params: {},
-  body: {}
+  body: {},
 })
 
-const responseStr = ref<string>("")
+const responseStr = ref<string>('')
 
 async function makeRequest() {
   try {
     request.headers = JSON.parse(headerStr.value.trim())
     request.params = JSON.parse(paramsStr.value.trim())
     request.body = JSON.parse(bodyStr.value.trim())
-  } catch (error) {
-    alert("JSON parsing error!")
+  }
+  catch (error) {
+    alert('JSON parsing error!')
   }
 
   const { method, headers, params, body } = request
@@ -38,10 +39,10 @@ async function makeRequest() {
     method,
     headers,
     params,
-    body: method === "GET" ? null : body
+    body: method === 'GET' ? null : body,
   })
 
-  responseStr.value = JSON.stringify(response, null, "\t")
+  responseStr.value = JSON.stringify(response, null, '\t')
 }
 </script>
 
@@ -66,15 +67,15 @@ async function makeRequest() {
         </div>
         <div mb-2>
           <p>Headers: </p>
-          <textarea input v-model="headerStr" w-100 h-30 font-size-3.5 class="input-mono" />
+          <textarea v-model="headerStr" input w-100 h-30 font-size-3.5 class="input-mono" />
         </div>
         <div mb-2>
           <p>Params: </p>
-          <textarea input v-model="paramsStr" w-100 h-30 font-size-3.5 class="input-mono" />
+          <textarea v-model="paramsStr" input w-100 h-30 font-size-3.5 class="input-mono" />
         </div>
         <div mb-2>
           <p>Body: </p>
-          <textarea input v-model="bodyStr" w-100 h-30 font-size-3.5 class="input-mono" />
+          <textarea v-model="bodyStr" input w-100 h-30 font-size-3.5 class="input-mono" />
         </div>
         <div mb-2>
           <p>Result: </p>

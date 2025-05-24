@@ -5,7 +5,7 @@ const menuStore = useMenuStore()
 <template>
   <header fixed z-5 m-0 top-0 left-0 w-full>
     <div class="up-left" absolute h-full w-fit flex="~ row items-center justify-center">
-      <img relative h-13 m-0 src="~/assets/img/Mayu.png" alt="logo">
+      <img relative h-13 m-0 src="~/assets/img/mayu.png" alt="logo">
       <span class="title" font-bold relative font-size-7 m-inline-2>Mayu</span>
       <NuxtLink to="/" ml-2>
         <span class="home" bg-white dark:bg-black>Home</span>

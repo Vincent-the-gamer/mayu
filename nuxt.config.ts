@@ -1,8 +1,8 @@
 export default defineNuxtConfig({
   nitro: {
     prerender: {
-      autoSubfolderIndex: false
-    }
+      autoSubfolderIndex: false,
+    },
   },
   app: {
     head: {
@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
     '@pinia/nuxt',
-    'nuxt-shiki'
+    'nuxt-shiki',
   ],
   pinia: {
     storesDirs: ['./store/**'],
