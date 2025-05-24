@@ -1,13 +1,19 @@
 export default defineNuxtConfig({
-  nitro: {
-    prerender: {
-      autoSubfolderIndex: false,
-    },
+  vite: {
+    server: {
+      proxy: {
+        '/extApi': {
+          target: "https://www.r8xkv0ew9.nyat.app:12323/api",
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/extApi/, ""),
+        }
+      }
+    }
   },
   runtimeConfig: {
     /**
      * production: "prod"
-     * deploy on vercel: "cloudflare"
+     * deploy on cloudflare: "cloudflare"
      */
     env: 'cloudflare',
     baseUrl: 'your_api_deploy_location',

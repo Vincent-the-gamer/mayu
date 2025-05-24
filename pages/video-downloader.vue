@@ -36,7 +36,12 @@ const directLink = ref<string>("")
 
 async function getVideo() {
     isLoading.value = true
-    const resp = await $fetch(`/api/directLink`, {
+
+    const { env } = await $fetch("/api/")
+
+    const api = env === "dev" ? "http://localhost:8080/extApi/directLink" : "https://www.r8xkv0ew9.nyat.app:12323/api/directLink"
+    
+    const resp = await $fetch(api, {
         method: "POST",
         body: {
             rawLink: rawLink.value,

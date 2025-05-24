@@ -15,7 +15,7 @@ The name **Mayu** is from **Mayu Shikibe(式部茉優)**, one of the main charac
 # Play
 
 > [!IMPORTANT]
-> This project is deployed as a cloudflare worker and working as both an API and webpage.
+> This project is deployed as a cloudflare worker and working as both an API and a webpage.
 
 https://mayu.erxianqiaottjt.workers.dev/
 
