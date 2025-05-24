@@ -1,11 +1,11 @@
 <template>
-  <div class="entry">
+  <div class="main">
     <slot />
   </div>
 </template>
 
 <style lang="scss" scoped>
-  .entry {
+.main {
   position: absolute;
   top: 3.8rem;
   margin: 0;

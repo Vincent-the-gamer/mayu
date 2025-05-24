@@ -1,6 +1,8 @@
 export interface MenuOptions {
   name: string
   route: string
+  icon?: string
+  description?: string
 }
 
 export interface HTTPRequest {

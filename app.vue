@@ -6,9 +6,9 @@ const menuStore = useMenuStore()
   <div>
     <NuxtRouteAnnouncer />
     <Header />
+    <Menu v-if="menuStore.show" />
     <NuxtLayout>
       <NuxtPage />
-      <Menu v-if="menuStore.show" />
     </NuxtLayout>
     <Footer />
   </div>
