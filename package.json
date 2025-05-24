@@ -9,7 +9,7 @@
     "url": "git+https://github.com/Vincent-the-gamer/swiss-knife.git"
   },
   "scripts": {
-    "build": "pnpm run assets && nuxt build",
+    "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
